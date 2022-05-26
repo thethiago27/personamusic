@@ -33,6 +33,7 @@ export default function Calc({accessToken, user}: CalcInterface) {
             try {
                 await api.get(`/playback/${player}/?access_token=${accessToken}`)
             } catch (e) {
+                console.log(e)
                 router.reload()
             }
         }
@@ -96,13 +97,11 @@ export default function Calc({accessToken, user}: CalcInterface) {
 
 export const getServerSideProps: GetServerSideProps = async ({req, params}: any) => {
 
-    const response = await axios.get("http://localhost:8700/user", {
+    const response = await api.get("/user", {
         headers: {
             "Authorization": `Bearer ${req.cookies.token}`
         }
     });
-
-    console.log(response.data)
 
     return {
         props: {

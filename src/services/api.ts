@@ -2,7 +2,7 @@ import axios from 'axios';
 import {getUserCookie} from "./user";
 
 export const api = axios.create({
-  baseURL: 'http://localhost:8700',
+  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
   headers: {
     Authorization: `Bearer ${getUserCookie}`,
   }

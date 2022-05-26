@@ -9,5 +9,5 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
         `access_token=${access_token}; Max-Age=${60 * 60 * 24 * 7}; ; path=/`,
     ])
 
-    return res.redirect('/')
+    return res.redirect('/calc')
 }
