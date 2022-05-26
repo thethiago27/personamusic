@@ -1,0 +1,49 @@
+.background {
+    background: #2EFFC0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contentContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: calc(100vh - 10rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        font-size: 4rem;
+        font-weight: 900;
+        color: #2972AB;
+        margin-bottom: 2rem;
+    }
+}
+
+.description {
+    width: 700px;
+    margin-top: 3rem;
+
+    p {
+        color: #2941AB;
+        font-size: 1.5rem;
+    }
+}
+
+.box {
+    background: #2941AB;
+    padding: 1.2rem;
+    border-radius: 5rem;
+    margin-top: 3rem;
+
+    p {
+        color: #2EFFC0;
+        font-size: 1.3rem;
+    }
+
+    .destaque {
+        font-weight: 900;
+    }
+}

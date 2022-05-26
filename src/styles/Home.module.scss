@@ -1,0 +1,52 @@
+.background {
+    background: url("../../public/background.svg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contentContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: calc(100vh - 5rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        font-size: 4rem;
+        font-weight: 900;
+        color: var(--green500);
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        width: 600px;
+    }
+
+    a {
+        margin-top: 4rem;
+        background: var(--green500);
+        padding: 1rem 3rem;
+        border-radius: 10rem;
+        width: 400px;
+
+        display: flex;
+        justify-content: center;
+
+        span {
+            color: #2941AB;
+            margin-top: 0.2rem;
+        }
+
+        .logo {
+            width: 25px;
+            height: 25px;
+            margin-right: 1rem;
+        }
+    }
+
+
+}
