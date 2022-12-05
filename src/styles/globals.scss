@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green500: #1ed760;
+  --blue400: #2941ab;
+  --pink500: #e7139f;
+  --yellow500: #fff32e;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+button,
+input,
+textarea {
+  font: 500 1rem "Inter", sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

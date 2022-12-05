@@ -1,0 +1,50 @@
+.background {
+  background: url("assets/background.svg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--green500);
+    margin-bottom: 2rem;
+  }
+}
+
+.auth {
+  margin-top: 4rem;
+  background: var(--green500);
+  padding: 1rem;
+  border-radius: 10rem;
+  width: 400px;
+
+  display: flex;
+  justify-content: center;
+
+  span {
+    color: #2941ab;
+    margin-top: 0.2rem;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+  }
+
+  .text {
+    margin-top: 0.4rem;
+  }
+}
